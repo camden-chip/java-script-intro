@@ -31,6 +31,22 @@ if( myName.length == 0) {
 } else if( myName.length > 10 ) {
 	console.log("your name must be at most 10 characters. You have written " + myName.length);
 }
+//an array (list, collection tec) of people
+var people = ["Tatsiana","Lola","Dima"];
+console.log( people );
+console.log( people [1] );
+//loop over all the people in the people array
+//and display their names in the console//
+
+for (var i = 0; i <people.length; i++) {
+	console.log( people[i] );
+};
+//tell java script to find the button with ID = hello 
+var helloButton = document.querySelector("#hello");
+// listen for clicks on the hello button
+helloButton.onclick = function(){
+	alert('Hello you!');
+}
 
 
 
