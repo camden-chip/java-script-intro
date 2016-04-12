@@ -47,7 +47,22 @@ var helloButton = document.querySelector("#hello");
 helloButton.onclick = function(){
 	alert('Hello you!');
 }
+// A function that adds two numbers together
+function calculateGrandTotal( prices ) {
+var grandTotal = 0;
+//loop over all the prices
+for(var i = 0; i < prices.length; i++) {
+	grandTotal = grandTotal + prices[i];
+}
+//display the grand total
+console.log( grandTotal );
+}
 
+//some shopping carts
+var cart1 = [20, 15, 12, 45, 90, 198];
+var cart2 = [10, 15, 17, 18, 200];
+calculateGrandTotal( cart1 );
+calculateGrandTotal( cart2 );
 
 
 
